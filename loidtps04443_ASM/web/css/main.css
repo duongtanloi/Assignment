@@ -1,0 +1,167 @@
+body{
+margin: 0;
+padding: 0px;
+background-color: lightgray;
+}
+.container{
+max-width:1200px;
+margin: 0 auto;
+background-color: white;
+}
+header{
+background-image: url("../images/banner.png");
+
+height: 0px;
+padding-bottom: 15%;
+position: relative;
+background-color: bisque;
+}
+header>h1{
+font-variant: small-caps;
+font-size: 50px;
+color: white;
+text-shadow: 0 0 20px orangered;
+position: absolute;
+bottom: 10px;
+left: 10px;
+}
+.menu{
+  background-color: coral;
+height: 40px;  
+}
+.menu a{
+text-decoration: none;
+font-variant: small-caps;
+color: blue;
+padding: 15px;
+font-size: 20px;
+font-weight: bold;
+padding-bottom: 5px;
+
+}
+.menu a:hover{
+color: brown;
+}
+.left{
+    width:20%;
+background-color: cyan;
+float: left;
+min-height: 500px;
+}
+.right{
+width:75%;
+background-color: #ffffff;
+float: left;
+}
+.footer{
+height: 50px;
+background-color: orangered;
+border-top: 5px double gray;
+clear: both;
+}
+.borderr{
+    margin-left: 90px;
+}
+/*.border1{
+    margin-top: 70px;
+    margin-left: 90px;
+    width: 80%;
+}*/
+h1{
+    margin-left: 35%;
+}
+.tieude{
+    color: blueviolet;
+}
+td{
+    border: 1px solid #000;
+    padding: 8px 10px;
+    height: 40px;
+}
+table{
+    border-collapse: collapse;
+    width: 80%;
+    color: #555;
+    margin: 50px auto;
+    background-color: #ccffff;
+}
+table > thead > tr > td,
+table > tbody > tr:last-child{
+    border-bottom: 2px solid #eee;
+}
+table > thead > tr > td{
+    vertical-align: bottom;
+    font-size: 1.4em;
+}
+table > tbody> tr{
+    border-bottom: 1px solid #eee;
+}
+table > tbody> tr:nth-child(odd){
+    background: rgba(244,244,244,0.5);
+}
+table > tbody >tr:hover,
+table > thead >tr:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+table > thead > tr > td{
+    text-align: center;
+    font-weight: bold;
+}
+.button{
+    margin-top: 10px;
+    width: 85px;
+    height: 35px;
+    color: #006666;
+    font-size: 15px;
+    font-weight: bold;
+}
+.buttonde{
+    width: 75px;
+    height: 30px;
+    color: #006666;
+    font-size: 15px;
+    font-weight: bold;
+}
+.dann{
+    float: right;
+}
+/* Css menu doc*/
+ul{
+ 
+}
+ul li{
+    height: 30px;          
+    line-height: 30px;      
+    list-style: none;       
+    padding: 0px 10px;      
+    
+    background: activeborder;       
+    border: solid 1px red;  
+    border-bottom: none;    
+    position: relative;     
+}
+ul li:last-child{
+    border-bottom: solid 1px red;
+}
+ul li ul{
+    position: absolute;     
+    top: -1px;         
+    right: -90px;      
+    display: none;      
+}
+ul li:hover ul{
+    display: block;
+}
+.menu2 a:hover{
+color: brown;
+}
+.menu2{
+    margin-right: 40px;
+}
+.phan1{
+    float: left;
+    margin-right: 100px;
+}
+.phan2{
+    
+}

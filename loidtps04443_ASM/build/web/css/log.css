@@ -1,0 +1,43 @@
+h1{
+    color: red;
+    margin-left: 140px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.khung{
+    background-color: activecaption;
+}
+.wrapper{
+    border: 1px solid;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+.form_login{
+    margin-left: 50px;
+}
+.clearfix{
+    margin-left: 70px;
+    
+}
+.txtlogin{
+    width: 270px;
+    height: 30px;
+    
+}
+.btnlogin{
+    width: 270px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.pass{
+    padding-left: 30px;
+}
+.loi{
+    margin-left: 70px;
+    color: red;
+    font-weight: bold;
+}

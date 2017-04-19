@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 21, 2017 1:01:50 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.xml.Staffs" table="Staffs" schema="dbo" catalog="Personel" optimistic-lock="version">
+        <id name="id" type="string">
+            <column name="Id" length="10" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="departs" class="entity.xml.Departs" fetch="select">
+            <column name="DepartId" length="10" not-null="true" />
+        </many-to-one>
+        <property name="name" type="string">
+            <column name="Name" length="50" not-null="true" />
+        </property>
+        <property name="gender" type="boolean">
+            <column name="Gender" not-null="true" />
+        </property>
+        <property name="birthday" type="date">
+            <column name="Birthday" not-null="true" />
+        </property>
+        <property name="photo" type="string">
+            <column name="Photo" length="50" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="50" not-null="true" />
+        </property>
+        <property name="phone" type="string">
+            <column name="Phone" length="25" not-null="true" />
+        </property>
+        <property name="salary" type="double">
+            <column name="Salary" precision="53" scale="0" not-null="true" />
+        </property>
+        <property name="notes" type="string">
+            <column name="Notes" length="500" />
+        </property>
+        <set name="recordses" table="Records" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="StaffId" length="10" not-null="true" />
+            </key>
+            <one-to-many class="entity.xml.Records" />
+        </set>
+    </class>
+</hibernate-mapping>
